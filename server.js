@@ -7,6 +7,9 @@ const PORT = 4000;
 
 // ------------- CONTROLLERS ------------- //
 
+//controller
+const usersCtrl = require('./controllers/usersController');
+
 
 //config views
 app.set('view engine', 'ejs');
@@ -29,6 +32,9 @@ app.use((req, res, next) => {
 app.get('/', (req, res) => {
     res.render('index');
     });
+
+// User Route
+app.use('/users', usersCtrl);
 
 
 
