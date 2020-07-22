@@ -42,14 +42,17 @@
     <main>
         <h1>This is the DASHBOARD</h1>
 
-        <% users.forEach(user) => { %>
+        <% users.forEach((user) => { %>
             <h2>
-                User Name
+                <%= user.firstName %><%= user.lastName %> 
             </h2>
             <p>
-                
+                <a href="mailto:<%=user.email%>"><%=user.email%> </a>
             </p>
-        <% } %>
+            <p>
+                <%= user.createdAt %>
+            </p>
+        <% }) %>
     </main>
 
 
