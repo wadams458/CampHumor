@@ -18,7 +18,7 @@ font-family: 'Montserrat', sans-serif; */
 }
 .error-message {
         width: 100%;
-        position: absolute;
+        /* position: absolute; */
         z-index: 10;
         bottom: 100%;
         text-align: center;
