@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;700&family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;500;700&family=Montserrat:wght@400;500;700&display=swap");
 
 /* FONTS */
 /* font-family: 'Hind', sans-serif;
@@ -9,67 +9,61 @@ font-family: 'Montserrat', sans-serif; */
   --yellow: #ffba08;
   --white: #ffffff;
   --black: #000000;
+  --red: #CE0427;
 }
 
-main {
-  margin: 100px;
+* {
+  font-family: 'Hind', sans-serif;
 }
-.error {
-  color: red;
-  border-color: red;
+
+/* GLOBAL */
+h1 {
+  font-size: 48px;
 }
-.hidden {
-  display: none;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
-.error-message {
-  width: 100%;
-  /* position: absolute; */
-  z-index: 10;
-  bottom: 100%;
-  text-align: center;
-  font-size: 0.7em;
-  font-weight: 800;
-  background-color: red;
-  padding: 1px 1px;
-  color: white;
-  opacity: 70%;
+
+p {
+  font-size: 26px;
 }
-.opaque {
-  opacity: 50%;
+
+.card-text {
+  font-family: 'Hind', sans-serif !important;
+  font-size: 24px !important;
 }
+
+
+.button {
+  background-color: var(--yellow);
+  color: var(--blue);
+}
+
+.btn {
+  border-radius: 25px;
+}
+
+a {
+  color: var(--white) !important;
+}
+
+/* .button:hover {
+
+} */
+
+
+/* NAV */
+
+nav h2{
+  color: var(--white) !important;
+}
+
 .searchBar {
   display: block;
 }
 
-#title {
-  background-image: url(../images/microphone.png);
-  height: 500px;
-  width: 1200px;
-  margin-bottom: 150px;
-  display: flex;
-  justify-content: center;
-}
-
-h1 {
-  font-size: 48px;
-}
-#podcast,
-#episodes {
-  margin-bottom: 150px;
-}
-footer {
-  background-color: #03256c;
-  width: 100vw;
-  padding: 2% 5%;
-  font-size: 1.2em;
-  color: #fff;
-  text-align: center;
-}
-.centerSignup {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
 nav.bg-light {
   background-color: var(--blue) !important;
 }
@@ -78,11 +72,101 @@ nav.bg-light {
   color: white !important;
 }
 
-.hero {
-  top: 23%;
-  position: relative;
+.icons {
+  font-size: 30px;
 }
 
+
+/* MAIN */
+main {
+  margin: 100px;
+}
+
+#title {
+  background-image: url(../images/welcome2.0.png);
+  height: 500px;
+  width: 1200px;
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#podcast,
+#episodes {
+  margin-bottom: 150px;
+}
+
+.centerSignup {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.centertext {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: 'Hind', sans-serif;
+  max-width: 550px;
+}
+
+.hero {
+  color: var(--blue);
+}
+
+/* #form {
+  background-color: pink;
+
+} */
+
+/* ERROR MESSAGE */
+.error {
+  color: var(--red);
+  border-color: var(--red);
+}
+.hidden {
+  display: none;
+}
+.error-message {
+  width: 100%;
+  z-index: 10;
+  bottom: 100%;
+  text-align: center;
+  font-size: 0.7em;
+  font-weight: 800;
+  background-color: var(--red);
+  padding: 1px 1px;
+  color: white;
+  opacity: 70%;
+}
+.opaque {
+  opacity: 50%;
+}
+
+/* CONFIRMATION MESSAGE */
+footer {
+  background-color: #03256c;
+  width: 100vw;
+  padding: 2% 5%;
+  color: #fff;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+}
+
+footer a {
+  font-size: 30px;
+}
+
+.footertwo {
+  position: fixed;
+  bottom: 0;
+}
 
 @media (max-width:767px) {
   #title {

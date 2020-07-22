@@ -31,9 +31,7 @@ app.post('/', (req,res)=>{
         }else {
         console.log(err);
         console.log(newUser);
-        res.render('index', {
-            msg: 'Email Address Added!'
-        });
+        res.render('index-c');
         }
     })
 });
