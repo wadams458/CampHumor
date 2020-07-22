@@ -12,13 +12,13 @@ const errorEl = document.getElementById('email-error');
 
 const signUpEl = document.querySelector('#signup')
 signUpEl.addEventListener('submit', e=>{
-    e.preventDefault();
     let allInputValid = true;
     toString(email.value);
     console.log(typeof email.value)
     const emailValid = isEmail(email.value)
     console.log(emailValid)
     if(!emailValid){
+        e.preventDefault();
         email.classList.add('error');
         console.log(errorEl)
         errorEl.classList.remove('hidden', 'opaque');
