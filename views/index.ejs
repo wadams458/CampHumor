@@ -51,6 +51,7 @@
         </section>
 
         <section id="signup">
+            <p><%= typeof msg != 'undefined' ? msg : '' %> </p>
             <form action="/users" method="POST" novalidate>
                 <label for="firstName">
                     First Name
