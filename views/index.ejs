@@ -1,164 +1,227 @@
+<% const blue = "#3256C" %> <% const yellow = "#FFBA08" %> <% const white =
+"#FFFFFF" %> <% const black = "#000000" %>
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Bootstrap -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+      integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
+      crossorigin="anonymous"
+    />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/main.css" />
     <!-- App JS -->
     <script defer src="/js/app.js"></script>
     <title>Truth Is Funnier Than Fiction</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-    
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">CAMP HUMOR PRODUCTIONS</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item ">
-                    <a class="nav-link" href="#home">Home</a> 
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a> 
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#podcast">Podcast</a> 
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#episodes">Episodes</a> 
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#signup">Sign Up</a> 
-                </li>
-              </ul>
-              <div class="searchBar">
-                <div class=" ml-auto">
-                    <a href="#"><i class="fab fa-facebook m-1"></i></a>
-                    <a href="#"><i class="fab fa-instagram m-1"></i></a>
-                    <a href="#"><i class="fab fa-twitter-square m-1"></i></a>
-                    <a href=""><i class="fab fa-audible m-1"></i></a>
-                    <a href=""><i class="fas fa-podcast m-1"></i></a>
-                </div>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-                </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">CAMP HUMOR PRODUCTIONS</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#podcast">Podcast</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#episodes">Episodes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#signup">Sign Up</a>
+            </li>
+          </ul>
+          <div class="searchBar">
+            <div class="ml-auto">
+              <a href="#"><i class="fab fa-facebook m-1"></i></a>
+              <a href="#"><i class="fab fa-instagram m-1"></i></a>
+              <a href="#"><i class="fab fa-twitter-square m-1"></i></a>
+              <a href=""><i class="fab fa-audible m-1"></i></a>
+              <a href=""><i class="fas fa-podcast m-1"></i></a>
             </div>
-          </nav>
-
+            <form class="form-inline my-2 my-lg-0">
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-success my-2 my-sm-0 button"
+                type="submit"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-        <section id="about">
-            <div id="title" class="container text-center">
-                <h1 class="hero">Welcome to Camp Humor Productions</h1>
+      <section id="about">
+        <div id="title" class="container text-center">
+          <h1 class="hero">Welcome to Camp Humor Productions</h1>
+        </div>
+      </section>
+
+      <section id="podcast">
+        <div class="card" style="max-width: 1200px;">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="https://picsum.photos/400" class="card-img" alt="..." />
             </div>
-             </section>
-
-
-        <section id="podcast" >
-            <div class="card" style="max-width: 1200px;">
-                <div class="row no-gutters">
-                  <div class="col-md-4">
-                    <img src="https://picsum.photos/400" class="card-img" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Truth is Funnier Than Fiction</h5>
-                      <p class="card-text">Host: Nathans Wife and friends.</p>
-                      <p class="card-text"><small class="text-muted">~We Talk About Funny Things~</small></p>
-                    </div>
-                  </div>
-                </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Truth is Funnier Than Fiction</h5>
+                <p class="card-text">Host: Nathans Wife and friends.</p>
+                <p class="card-text">
+                  <small class="text-muted">~We Talk About Funny Things~</small>
+                </p>
               </div>
-        </section>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section id="episodes">
+        <div class="card-deck">
+          <div class="card">
+            <img
+              src="https://picsum.photos/335/395"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Episode 1</h5>
+              <p class="card-text">Episode description.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Uploaded July 8,2020</small>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://picsum.photos/335/395"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Episode 2</h5>
+              <p class="card-text">Episode Description.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Uploaded July 15</small>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://picsum.photos/335/395"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Episode 3</h5>
+              <p class="card-text">Episode Description.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Uploaded July 22</small>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section id="episodes">
-            <div class="card-deck">
-                <div class="card">
-                  <img src="https://picsum.photos/335/395" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Episode 1</h5>
-                    <p class="card-text">Episode description.</p>
-                  </div>
-                  <div class="card-footer">
-                    <small class="text-muted">Uploaded July 8,2020</small>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="https://picsum.photos/335/395" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Episode 2</h5>
-                    <p class="card-text">Episode Description.</p>
-                  </div>
-                  <div class="card-footer">
-                    <small class="text-muted">Uploaded July 15</small> 
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="https://picsum.photos/335/395" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Episode 3</h5>
-                    <p class="card-text">Episode Description.</p>
-                  </div>
-                  <div class="card-footer">
-                    <small class="text-muted">Uploaded July 22</small>
-                  </div>
-                </div>
-              </div>
-        </section>
+      <section id="signup">
+        <h3 class="centerSignup">Subscribe to Camp Humor Productions</h3>
+        <p class="centerSignup">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum,
+          dolores quisquam optio molestiae modi architecto. Veniam praesentium
+          voluptatibus itaque dolores.
+        </p>
 
-
-        <section id="signup">
-            
-            <h3 class="centerSignup">Subscribe to Camp Humor Productions</h3>
-            <p class="centerSignup">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, dolores quisquam optio molestiae modi architecto. Veniam praesentium voluptatibus itaque dolores.</p>
-           
-            <p id="message">Lorem ipsum dolor sit amet<%= typeof msg != 'undefined' ? msg : '' %> </p>
-            <form action="/#signup" method="POST" novalidate>
-                <label for="firstName">
-                    <div class="error-message hidden opaque"></div>
-                    First Name
-                    <input class="form-control" type="text" name="firstName" placeholder="First Name" id="firstName">
-                </label>
-                <label for="lastName">
-                    <div class="error-message hidden opaque"></div>
-                    Last Name
-                    <input class="form-control" type="text" name="lastName" placeholder="Last Name" id="lastName">
-                </label>
-                <label for="email">
-                    <div id="email-error" class="error-message hidden opaque"></div>
-                    Email
-                    <input class=" form-control" type="email" name="email" placeholder="Email" id="email">
-                    <!-- <div id="hint" style="display: none;"></div> -->
-
-                </label>
-                <button  class="btn btn-primary" type="submit">Submit</button>
-            </form>
-        </section>
-
+        <p id="message">
+          Lorem ipsum dolor sit amet<%= typeof msg != 'undefined' ? msg : '' %>
+        </p>
+        <form action="/#signup" method="POST" novalidate>
+          <label for="firstName">
+            <div class="error-message hidden opaque"></div>
+            First Name
+            <input
+              class="form-control"
+              type="text"
+              name="firstName"
+              placeholder="First Name"
+              id="firstName"
+            />
+          </label>
+          <label for="lastName">
+            <div class="error-message hidden opaque"></div>
+            Last Name
+            <input
+              class="form-control"
+              type="text"
+              name="lastName"
+              placeholder="Last Name"
+              id="lastName"
+            />
+          </label>
+          <label for="email">
+            <div id="email-error" class="error-message hidden opaque"></div>
+            Email
+            <input
+              class="form-control"
+              type="email"
+              name="email"
+              placeholder="Email"
+              id="email"
+            />
+            <!-- <div id="hint" style="display: none;"></div> -->
+          </label>
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+      </section>
     </main>
 
-
     <footer>
-        <a href="#"><i class="fab fa-facebook m-1"></i></a>
-        <a href="#"><i class="fab fa-instagram m-1"></i></a>
-        <a href="#"><i class="fab fa-twitter-square m-1"></i></a>
-        <a href=""><i class="fab fa-audible m-1"></i></a>
-        <a href=""><i class="fas fa-podcast m-1"></i></a>
-        <p>&copy; 2020 CAMP HUMOR PRODUCTIONS | | Truth is Funnier Than Fiction</p>
-        <p>Privacy | Terms | Permission | Credit</p>
+      <a href="#"><i class="fab fa-facebook m-1"></i></a>
+      <a href="#"><i class="fab fa-instagram m-1"></i></a>
+      <a href="#"><i class="fab fa-twitter-square m-1"></i></a>
+      <a href=""><i class="fab fa-audible m-1"></i></a>
+      <a href=""><i class="fas fa-podcast m-1"></i></a>
+      <p>
+        &copy; 2020 CAMP HUMOR PRODUCTIONS | | Truth is Funnier Than Fiction
+      </p>
+      <p>Privacy | Terms | Permission | Credit</p>
     </footer>
 
+<<<<<<< HEAD
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
@@ -170,3 +233,22 @@
     </body>
 >>>>>>> master
 </html>
+=======
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+>>>>>>> 7943270b74c232b6a09b4ce1b62d6f7829722703
