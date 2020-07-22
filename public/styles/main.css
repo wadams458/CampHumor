@@ -40,6 +40,7 @@ main {
 .searchBar {
   display: block;
 }
+
 #title {
   background-image: url(../images/microphone.png);
   height: 500px;
@@ -48,6 +49,7 @@ main {
   display: flex;
   justify-content: center;
 }
+
 h1 {
   font-size: 48px;
 }
@@ -79,4 +81,33 @@ nav.bg-light {
 .hero {
   top: 23%;
   position: relative;
+}
+
+
+@media (max-width:767px) {
+  #title {
+      max-width: 100%;
+      max-height: 100%;
+  }
+}
+
+@media (min-width:768px) {
+  #title {
+      max-width: 300px;
+      max-height: 300px;
+  }
+}
+
+@media (min-width:992px) {
+  #title {
+      max-width: 1200px;
+      max-height: 500px;
+  }
+}
+
+@media (min-width:1200px) {
+  #title {
+      max-width: 1200px;
+      max-height: 500px;
+  }
 }
