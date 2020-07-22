@@ -6,6 +6,7 @@ function isEmail(email) {
     let regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     return regex.test(email);
 }
+
 const email = document.getElementById('email')
 const errorEl = document.getElementById('email-error');
 
@@ -13,9 +14,13 @@ const signUpEl = document.querySelector('#signup')
 signUpEl.addEventListener('submit', e=>{
     e.preventDefault();
     let allInputValid = true;
-    const emailValid = isEmail(email)
+    toString(email.value);
+    console.log(typeof email.value)
+    const emailValid = isEmail(email.value)
+    console.log(emailValid)
     if(!emailValid){
         email.classList.add('error');
+        console.log(errorEl)
         errorEl.classList.remove('hidden', 'opaque');
         errorEl.innerText = "invalid email address";
         allInputValid = false;
@@ -29,6 +34,9 @@ signUpEl.addEventListener('submit', e=>{
         console.log('submitted form')
     }
 })
+
+
+
 
 //name validation:
 // must be no longer than 16 num characters
