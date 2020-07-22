@@ -163,6 +163,11 @@ footer a {
   font-size: 30px;
 }
 
+.footertwo {
+  position: fixed;
+  bottom: 0;
+}
+
 @media (max-width:767px) {
   #title {
       max-width: 100%;
