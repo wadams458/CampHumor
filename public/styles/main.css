@@ -5,10 +5,12 @@
 font-family: 'Montserrat', sans-serif; */
 
 * {
-    background: antiquewhite;
+
 }
 
-
+main {
+    margin: 100px;
+}
 .error {
     color: red;
     border-color: red;
@@ -32,3 +34,35 @@ font-family: 'Montserrat', sans-serif; */
 .opaque {
     opacity: 50%;
 }
+.searchBar {
+    display: block;
+}
+#title {
+    background-image: url(../images/microphone.png);
+    height: 500px;
+    width: 1200px;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    
+    font-size: 48px;
+}
+#podcast, #episodes {
+    margin-bottom: 150px;
+}
+footer {
+    background-color: #000;
+    width: 100vw;
+    padding: 2% 5%;
+    font-size: 1.2em;
+    color: #fff;
+    text-align: center;
+  }
+  .centerSignup {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+  }
