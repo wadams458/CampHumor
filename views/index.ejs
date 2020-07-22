@@ -51,18 +51,24 @@
         </section>
 
         <section id="signup">
+            <p><%= typeof msg != 'undefined' ? msg : '' %> </p>
             <form action="/users" method="POST" novalidate>
                 <label for="firstName">
+                    <div class="error-message hidden"></div>
                     First Name
                     <input type="text" name="firstName" placeholder="First Name" id="firstName">
                 </label>
                 <label for="lastName">
+                    <div class="error-message hidden"></div>
                     Last Name
                     <input type="text" name="lastName" placeholder="Last Name" id="lastName">
                 </label>
                 <label for="email">
+                    <div id="email-error" class="error-message hidden"></div>
                     Email
                     <input type="email" name="email" placeholder="Email" id="email">
+                    <div id="hint" style="display: none;"></div>
+
                 </label>
                 <button type="submit">Submit</button>
             </form>
@@ -79,6 +85,9 @@
         <a href=""><i class="fas fa-podcast"></i></a>
     </footer>
 
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/mailcheck/1.1.2/mailcheck.js"></script> -->
 </body>
 </html>

@@ -1,6 +1,7 @@
 // User Schema
 
 const mongoose = require('mongoose');
+require('mongoose-type-email')
 
 const userSchema  = new mongoose.Schema({
     firstName: {
@@ -12,7 +13,7 @@ const userSchema  = new mongoose.Schema({
         required: true,
     },
     email: {
-        type: String,
+        type: mongoose.SchemaTypes.Email,
         required: true,
     },
 },{timestamps:true});
