@@ -49,6 +49,10 @@ a {
   color: var(--white) !important;
 }
 
+.email-links {
+  color: black !important;
+}
+
 /* .button:hover {
 
 } */
@@ -174,21 +178,18 @@ footer a {
       max-height: 100%;
   }
 }
-
 @media (min-width:768px) {
   #title {
-      max-width: 300px;
-      max-height: 300px;
+      max-width: 50%;
+      max-height: 50%;
   }
 }
-
 @media (min-width:992px) {
   #title {
-      max-width: 1200px;
-      max-height: 500px;
+      max-width: 75%;
+      max-height: 75%;
   }
 }
-
 @media (min-width:1200px) {
   #title {
       max-width: 1200px;
