@@ -10,8 +10,4 @@ router.get('/', (req,res)=>{
         });
     })
 });
-<<<<<<< HEAD
-
-=======
->>>>>>> f6365cbe3f39245669f96b37200e4dcdc84f61ae
 module.exports = router;
