@@ -1,10 +1,7 @@
 // User Schema
 
 const mongoose = require('mongoose');
-<<<<<<< HEAD
-=======
 // require('mongoose-type-email')
->>>>>>> master
 
 const userSchema  = new mongoose.Schema({
     firstName: {
@@ -16,10 +13,7 @@ const userSchema  = new mongoose.Schema({
         required: true,
     },
     email: {
-<<<<<<< HEAD
-=======
         // type: mongoose.SchemaTypes.Email,
->>>>>>> master
         type: String,
         required: true,
     },
