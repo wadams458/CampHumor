@@ -1,9 +1,7 @@
 const express = require ('express');
 const router = express.Router();
-
 //DB
 const db = require('../models');
-
 router.get('/', (req,res)=>{
     db.User.find({},(err,users)=>{
         if(err)console.log(err);
@@ -12,5 +10,8 @@ router.get('/', (req,res)=>{
         });
     })
 });
+<<<<<<< HEAD
 
+=======
+>>>>>>> f6365cbe3f39245669f96b37200e4dcdc84f61ae
 module.exports = router;

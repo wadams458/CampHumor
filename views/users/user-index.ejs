@@ -16,56 +16,54 @@
 <body>
 
     <header>
-        <nav class="navbar">
-        <ul>
-            <li>
-                <a href="#home">Home</a> 
-            </li>
-            <li>
-                <a href="#about">About</a> 
-            </li>
-            <li>
-                <a href="#podcast">Podcast</a> 
-            </li>
-            <li>
-                <a href="#signup">Sign Up</a> 
-            </li>
-        </ul>
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-twitter-square"></i></a>
-        <a href=""><i class="fab fa-audible"></i></a>
-        <a href=""><i class="fas fa-podcast"></i></a>
-        </nav>
+       
     </header>
 
     <main>
-        <h1>This is the DASHBOARD</h1>
+        <div class="container">
+            <h1>My Dashboard</h1>
+        </div>
 
-        <% users.forEach((user) => { %>
-            <h2>
-                <%= user.firstName %>
-                <%= user.lastName %> 
-            </h2>
-            <p>
-                <a href="mailto:<%=user.email%>"><%=user.email%> </a>
-            </p>
-            <p>
-                <%=// user.createdAt %> 
-                Added on: <%= user.createdAt.toDateString() %>
-                <%= user.createdAt.toLocaleTimeString() %>
-            </p>
-        <% }) %>
+        <div class="container">
+            <table class="table table-striped">
+                <thead>
+                    
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Email</th>
+                    <th scope="col"> Added</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <% users.forEach((user, index) => { %>
+                <tr>
+                    <th scope="row"><%= index+1 %></th>
+                    <td><%= user.firstName %></td>
+                    <td><%= user.lastName %></td>
+                    <td><a href="mailto:<%=user.email%>"><%=user.email%> </a></td>
+                    <td><%= user.createdAt.toDateString() %> 
+                    <%= user.createdAt.toLocaleTimeString() %></td>
+                </tr>
+                <% }) %>
+            
+                </tbody>
+            </table>
+        </div>
+        
     </main>
 
 
 
-    <footer>
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-twitter-square"></i></a>
-        <a href=""><i class="fab fa-audible"></i></a>
-        <a href=""><i class="fas fa-podcast"></i></a>
+    <footer class="footertwo">
+        <a href="#"><i class="fab fa-facebook m-1"></i></a>
+        <a href="#"><i class="fab fa-instagram m-1"></i></a>
+        <a href="#"><i class="fab fa-twitter-square m-1"></i></a>
+        <a href=""><i class="fab fa-audible m-1"></i></a>
+        <a href=""><i class="fas fa-podcast m-1"></i></a>
+        <p>&copy; 2020 CAMP HUMOR PRODUCTIONS | | Truth is Funnier Than Fiction</p>
+        <p>Privacy | Terms | Permission | Credit</p>
     </footer>
 
 </body>
