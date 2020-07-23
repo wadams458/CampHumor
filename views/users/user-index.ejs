@@ -42,7 +42,7 @@
                     <th scope="row"><%= index+1 %></th>
                     <td><%= user.firstName %></td>
                     <td><%= user.lastName %></td>
-                    <td><a href="mailto:<%=user.email%>"><%=user.email%> </a></td>
+                    <td><a class= "email-links" href="mailto:<%=user.email%>"><%=user.email%> </a></td>
                     <td><%= user.createdAt.toDateString() %> 
                     <%= user.createdAt.toLocaleTimeString() %></td>
                 </tr>
