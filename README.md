@@ -1,1 +1,1 @@
-https://wadams458.github.io/CampHumor/
+https://git.heroku.com/camphumor.git
